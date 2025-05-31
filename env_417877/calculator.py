@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def dodawanie(liczba1, liczba2):
     return np.add(liczba1, liczba2)
@@ -14,3 +15,13 @@ def dzielenie(liczba1, liczba2):
         return np.divide(liczba1, liczba2)
     else:
         return "Błąd: dzielenie przez zero!"
+    
+
+def maximum(liczby):
+    return pd.Series(liczby).max()
+
+def minimum(liczby):
+    return pd.Series(liczby).min()
+    
+def sum(liczby):
+    return pd.Series(liczby).sum()
