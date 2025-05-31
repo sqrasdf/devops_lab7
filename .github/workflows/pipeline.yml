@@ -150,4 +150,4 @@ jobs:
 
       - name: Run test
         run: |
-          cd ./env_417877 && pytest new_test.py
+          cd ./env_417877 && pytest new_tests.py
